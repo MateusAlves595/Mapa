@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+path{
+    fill: #ECCEA7;
+    stroke: #fff;
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+path:hover{
+    fill: #FA9E27;
+    transition: .3s;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    grid-template-areas: 
+    'esquerda  direita';
+    padding-top: 60px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-infos{
+    display: grid;
+    grid-area: direita;
+    width: 375px;
+    height: 417px;
+    align-items: center;
+    justify-content: center;
+    background: #F5E7D3;
+}
+
+.container-info{
+    width: 375px;
+    height: 100px;
+    left: 875px;
+    top: 234px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    left: 910px;
+    top: 271px;
+    background: #FA9E27;
+    opacity: 0.8;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sigla-estado{
+    width: 60px;
+    height: 44px;
+    left: 932px;
+    top: 299px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.detalhes{
+    height: 100px;
+}
+
+.nome-estado{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FA9E27;
+}
+
+.capital{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.regiao{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+/*cidades*/
+
+.container-cidades{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    left: 910px;
+    top: 407px;
+    padding-top: 10px;
+}
+
+.texto-cidades{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
