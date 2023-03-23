@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+ul, li, a{
+    text-decoration: none;
+    list-style: none;
+}
+
 path{
     fill: #ECCEA7;
     stroke: #fff;
@@ -22,19 +27,24 @@ path:hover{
     grid-template-areas: 
     'esquerda  direita';
     padding-top: 60px;
-    gap: 50px;
     align-items: center;
     justify-content: center;
+    gap: 50px;
 }
 
 .box-infos{
     display: grid;
+    grid-template-areas: 
+    "encima"
+    "embaixo";
+    grid-template-rows: 1fr 1fr;
     grid-area: direita;
-    width: 375px;
-    height: 417px;
+    min-width: 375px;
+    min-height: 400px;
     align-items: center;
     justify-content: center;
     background: #F5E7D3;
+    overflow-y: auto;
 }
 
 .container-info{
@@ -46,7 +56,6 @@ path:hover{
     flex-direction: row;
     gap: 30px;
     justify-content: center;
-    padding-top: 10px;
 }
 
 .circulo{
@@ -60,8 +69,8 @@ path:hover{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .sigla-estado{
@@ -75,7 +84,6 @@ path:hover{
     font-size: 36px;
     line-height: 44px;
     color: #FFFFFF;
-    padding-left: 10px;
 }
 
 .detalhes{
@@ -111,16 +119,6 @@ path:hover{
 
 /*cidades*/
 
-.container-cidades{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 300px;
-    left: 910px;
-    top: 407px;
-    padding-top: 10px;
-}
-
 .texto-cidades{
     font-family: 'Inter';
     font-style: normal;
@@ -128,4 +126,14 @@ path:hover{
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+}
+
+.container-cidades ul{
+    display: grid;
+    height: 200px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-cidades{
+    margin: 20px;
 }
